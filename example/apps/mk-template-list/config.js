@@ -1,11 +1,28 @@
 import { fetch } from 'mk-utils'
 
+var data = []
+
+for (let i = 0; i < 200; i++) {
+	data.push({
+		selected: false,
+		code: 'code' + (i + 1),
+		name: 'name' + (i + 1)
+	})
+}
+
 var _options = {
 	fetchList: (current, pageSize, filter) => {
+		let list = []
+
+		for (let j = (current - 1) * pageSize; j < current * pageSize; j++) {
+			if (data[j])
+				list.push(data[j])
+		}
+
 		return fetch.test('', '', {
 			result: true,
-			list: [...Array(pageSize)].map((k, i) => { return { select: false, code: (current - 1) * pageSize + i + 1 } }),
-			pagination: { pageSize: pageSize, current: current, total: 100 }
+			list: list,
+			pagination: { pageSize: pageSize, current: current, total: data.length }
 		})
 	}
 }
