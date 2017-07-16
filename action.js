@@ -14,13 +14,12 @@ class action {
         injections.reduce('init')
 
         const pagination = this.metaAction.gf('data.pagination').toJS()
-        console.log(pagination)
-        this.load(pagination.current, pagination.pageSize)
+        this.load(pagination)
     }
 
-    load = async (current, pageSize) => {
-        debugger
-        const response = await this.config.fetchList(current, pageSize, {})
+    load = async (pagination, filter = {}) => {
+        const response = await this.config.fetchList(pagination, filter)
+        response.filter = filter
         this.injections.reduce('load', response)
     }
 
@@ -42,7 +41,15 @@ class action {
     }
 
     pageChanged = (current, pageSize) => {
-        this.load(current, pageSize)
+        const filter = this.metaAction.gf('data.filter').toJS()
+        this.load({current, pageSize}, filter)
+    }
+
+    searchChanged = (e) => {
+        const pagination = this.metaAction.gf('data.pagination').toJS()
+        const filter = { search: e.target.value }
+        debugger
+        this.load(pagination, filter)
     }
 
 }

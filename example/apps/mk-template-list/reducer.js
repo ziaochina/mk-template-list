@@ -23,6 +23,7 @@ class reducer {
     load = (state, response) => {
         state = this.metaReducer.sf(state, 'data.list', fromJS(response.list))
         state = this.metaReducer.sf(state, 'data.pagination', fromJS(response.pagination))
+        state = this.metaReducer.sf(state, 'data.filter', fromJS(response.filter))
         return state
     }
 

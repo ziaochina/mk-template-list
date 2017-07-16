@@ -13,7 +13,9 @@ export function getMeta() {
 				className: 'header-left',
 				children: [{
 					name: 'search',
-					component: 'Input'
+					component: 'Input',
+					value: '{{data.filter.search}}',
+					onChange: '{{$searchChanged}}'
 				}, {
 					name: 'refresh',
 					component: 'Button',
@@ -102,6 +104,23 @@ export function getMeta() {
 						component: 'DataGrid.Cell',
 						_power: '({rowIndex})=>rowIndex',
 						children: '{{data.list[_rowIndex].code}}',
+					},
+				}, {
+					name: 'name',
+					component: 'DataGrid.Column',
+					columnKey: 'name',
+					flexGrow: 1,
+					width: 200,
+					header: {
+						name: 'header',
+						component: 'DataGrid.Cell',
+						children: 'name'
+					},
+					cell: {
+						name: 'cell',
+						component: 'DataGrid.Cell',
+						_power: '({rowIndex})=>rowIndex',
+						children: '{{data.list[_rowIndex].name}}',
 					},
 				}]
 			}]
