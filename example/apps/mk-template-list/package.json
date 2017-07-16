@@ -1,0 +1,49 @@
+{
+  "_from": "mk-template-list",
+  "_id": "mk-template-list@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-HwnKBEHkJlKGFpxco6YePZL/CcBsrg0F+XDxqxv4kuoqSlinUmC433znVCfpzYM+9E9mVb6rzRWAF9Rd5aLxkA==",
+  "_location": "/mk-template-list",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "mk-template-list",
+    "name": "mk-template-list",
+    "escapedName": "mk-template-list",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/mk-template-list/-/mk-template-list-1.0.0.tgz",
+  "_shasum": "f5b7d91389da228a832a576eeb31dbfa4e4c9aa6",
+  "_spec": "mk-template-list",
+  "_where": "/home/zlj/my/github/self/mk-template-list/master/example",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/ziaochina/mk-template-list/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "mk-template-list",
+  "directories": {
+    "example": "example"
+  },
+  "homepage": "https://github.com/ziaochina/mk-template-list#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "mk-template-list",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziaochina/mk-template-list.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
+}
