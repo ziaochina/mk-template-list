@@ -1,0 +1,23 @@
+{
+  "name": "mk-template-list",
+  "version": "1.0.0",
+  "description": "mk-template-list",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziaochina/mk-template-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ziaochina/mk-template-list/issues"
+  },
+  "homepage": "https://github.com/ziaochina/mk-template-list#readme"
+}
