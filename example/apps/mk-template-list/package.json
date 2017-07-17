@@ -1,8 +1,8 @@
 {
   "_from": "mk-template-list",
-  "_id": "mk-template-list@1.0.2",
+  "_id": "mk-template-list@1.0.3",
   "_inBundle": false,
-  "_integrity": "sha512-SYj0qU7BujUv0RoippWzwrTQclsHSqdbPInhuDOTDLa61i+0Mr91Hfyv6yT+8gWmIKI3ewlOOPJxq/eO5dqRhw==",
+  "_integrity": "sha512-JRvPZubE2BeKshJOranYn+B+FTCyQUM5W8BOKEYuGBNfmkpMvtG/5Sc8LUj/ow0WZ34YN5Au3BuACS7VJB9WXw==",
   "_location": "/mk-template-list",
   "_phantomChildren": {},
   "_requested": {
@@ -19,8 +19,8 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/mk-template-list/-/mk-template-list-1.0.2.tgz",
-  "_shasum": "4d90aff8d761e24f09d1626ea9f22419f7a6155d",
+  "_resolved": "https://registry.npmjs.org/mk-template-list/-/mk-template-list-1.0.3.tgz",
+  "_shasum": "2c70ad6fa9139dff1463fb05206d5a07c5e8c2ea",
   "_spec": "mk-template-list",
   "_where": "/home/zlj/my/github/self/mk-template-list/master/example",
   "author": "",
@@ -45,5 +45,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.2"
+  "version": "1.0.3"
 }
