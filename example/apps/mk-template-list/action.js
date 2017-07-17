@@ -45,11 +45,41 @@ class action {
         this.load({current, pageSize}, filter)
     }
 
-    searchChanged = (e) => {
-        const pagination = this.metaAction.gf('data.pagination').toJS()
-        const filter = { search: e.target.value }
-        debugger
+    nameChange = (e) => {
+        const pagination = this.metaAction.gf('data.pagination').toJS(),
+            filter = this.metaAction.gf('data.filter').toJS()
+
+        filter.name = e.target.value
         this.load(pagination, filter)
+    }
+
+    sexChange = (v) =>{
+        const pagination = this.metaAction.gf('data.pagination').toJS(),
+            filter = this.metaAction.gf('data.filter').toJS()
+        
+        filter.sex = v
+        this.load(pagination, filter)
+    }
+
+    getBirthdayRange = () =>{
+        const birthdayRange = this.metaAction.gf('data.filter.birthdayRange')
+        if(birthdayRange){
+            return birthdayRange.toJS()
+        }
+    }
+
+    birthdayRangeChange = (dates) =>{
+        const pagination = this.metaAction.gf('data.pagination').toJS(),
+            filter = this.metaAction.gf('data.filter').toJS()
+        
+        filter.birthdayRange = dates
+        this.load(pagination, filter)
+    }
+
+    clearFilter = () =>{
+        const pagination = this.metaAction.gf('data.pagination').toJS(),
+            filter = {}
+        this.load(pagination, filter)   
     }
 
 }

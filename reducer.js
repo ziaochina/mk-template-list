@@ -16,7 +16,6 @@ class reducer {
                 other: {}
             }
         }
-
         return this.metaReducer.init(state, data)
     }
 
